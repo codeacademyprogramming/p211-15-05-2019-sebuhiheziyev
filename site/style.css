@@ -1,0 +1,564 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* DEFAULTS */
+.my-btn {
+  border-width: 2px;
+  border-color: black;
+  padding: 10px !important;
+}
+.my-btn:hover {
+  background-color: #0087ab;
+  border-color: #0087ab;
+}
+.separator {
+  width: 80px;
+  border-width: 4px;
+  border-color: black;
+}
+
+.main-sec {
+  padding: 100px 0;
+}
+
+.main_h {
+  font-family: "Merriweather", serif;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.main_p {
+  color: #656565;
+  font-size: 0.8em;
+}
+/* END OF DEFAULTS */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  z-index: 9999;
+}
+
+nav .logo img {
+  width: 120px;
+}
+
+nav .logo span {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+nav .menu > li {
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+}
+nav .menu > li > a {
+  padding: 5px 20px;
+  color: black;
+}
+nav .menu > li > a:hover {
+  text-decoration: none;
+}
+
+nav .menu > li > .dropdown {
+  display: none;
+  width: 200px;
+  padding: 15px;
+  position: absolute;
+  top: 100px;
+  left: -10px;
+  background-color: #0a1c44;
+}
+nav .menu > li > .dropdown a {
+  color: white;
+  padding: 10px 0px;
+  display: block;
+}
+nav .menu > li > .dropdown a:hover {
+  text-decoration: none;
+}
+nav .menu > li > .dropdown > li:not(:last-child) a {
+  border-bottom: 1px solid white;
+}
+nav .menu > li > .dropdown > li {
+  line-height: initial;
+}
+nav .menu > li:hover .dropdown {
+  display: block;
+}
+
+#head {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://mobirise.com/extensions/educationm4/assets/images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#head p {
+  margin: 30px 0;
+  font-size: 1.2em;
+}
+#head .learn {
+  padding: 10px;
+}
+#head .sign_up {
+  background-color: #0087ab;
+  color: white;
+  border-color: #0087ab;
+}
+#head .sign_up:hover {
+  background-color: white;
+  color: #0087ab;
+  border-color: white;
+}
+
+#words .img-wrapper img {
+  max-width: 100%;
+}
+#words h2 {
+  font-size: 3em;
+}
+
+#courses .right {
+  padding: 60px 90px;
+  background-color: #0a1c44;
+  color: white;
+}
+
+#courses .left_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#courses .main_h {
+  font-size: 3em;
+}
+#courses .separator {
+  border-color: white;
+}
+#courses .main_p {
+  color: white;
+  margin: 50px 0;
+  font-size: 1em;
+}
+
+#courses .main_wrapper {
+  height: 100%;
+}
+
+#courses .course .right_wrapper {
+  background-color: white;
+  color: black;
+}
+
+#courses .course .img-wrapper {
+  height: 145px;
+}
+
+#courses .course img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#courses .course .right_wrapper h4 {
+  font-size: 1.3em;
+  color: #0087ab;
+  font-weight: bold;
+}
+
+#categories .left-main-img,
+#categories .right-row {
+  height: 500px;
+}
+#categories .main_h {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+#categories hr {
+  margin: 0 auto;
+}
+
+#categories .right-row .img-wrapper {
+  height: 240px;
+}
+
+#categories .right-row .col-md-6:nth-child(3),
+#categories .right-row .col-md-6:nth-child(4) {
+  margin-top: 20px;
+}
+
+#categories img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+#categories .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0086ab00;
+  transition: all 0.3s ease-in-out;
+}
+#categories .layer h5 {
+  font-weight: bold;
+}
+#categories .img-wrapper {
+  overflow: hidden;
+}
+#categories .img-wrapper:hover .layer {
+  background-color: #0086ab9d;
+}
+#categories .img-wrapper:hover img {
+  transform: scale(1.1);
+}
+#lessons {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+}
+.l-head {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.l-head hr {
+  margin: 0 auto;
+  border-color: #0a1c44;
+}
+.l-head h2 {
+  font-size: 41.6px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  color: #000000;
+}
+
+.lesson-t img {
+  max-width: 100%;
+}
+.l-time {
+  width: 85px;
+  height: 76px;
+  overflow: hidden;
+  background: #0a1c44;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.l-time h3 {
+  font-size: 12px;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+}
+.l-time h3:nth-last-of-type(1),
+.l-time h3:nth-last-of-type(3) {
+  font-weight: 700;
+}
+
+.l-info h4 {
+  padding: 14px 0px 0px 14px;
+  color: #0087ab;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.l-info i {
+  height: 16px;
+  width: 16px;
+  color: #656565;
+  padding-left: 14px;
+}
+.l-info span {
+  color: #656565;
+  font-size: 10px;
+  padding-left: 14px;
+  font-family: "Merriweather", serif;
+}
+#lessons .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #00a4d100;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.l-btn {
+  background-color: #0087ab;
+  border-color: #0087ab;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  height: 32px;
+  margin-bottom: 10px;
+  line-height: 8px;
+  border-radius: 5px;
+}
+.l-btn:hover {
+  background-color: white;
+  border-color: white;
+  color: #0087ab;
+}
+.l2-btn {
+  font-size: 11px;
+  font-weight: 600;
+}
+#lessons .l-hov:hover .layer {
+  opacity: 1;
+  background: #0a1c4470;
+}
+.skil-bars {
+  width: 120px;
+  height: 120px;
+  border: 8px solid;
+  border-radius: 50%;
+  border-left-color: #ebebeb;
+  border-top-color: #0087ab;
+  border-right-color: #ebebeb;
+  border-bottom-color: #ebebeb;
+  transform: rotate(45deg);
+}
+.skil-bars h3 {
+  font-family: "Merriweather", serif;
+
+  text-align: center;
+  line-height: 108px;
+  transform: rotate(-45deg);
+}
+.s-width {
+  width: 227px;
+}
+.s-width h4 {
+  margin-left: 40px;
+}
+.bars2 {
+  border-right-color: #0087ab;
+}
+.bars3 {
+  border-right-color: #0087ab;
+  border-bottom-color: #0087ab;
+}
+.bars4 {
+  border-color: #0087ab;
+}
+.l-all-w {
+  width: 75%;
+  margin: 0 auto;
+}
+.skil1 h6 {
+  margin-left: 40px;
+}
+.skil2 h6 {
+  margin-left: 25px;
+}
+.skil3 h6 {
+  margin-left: 35px;
+}
+.s-width h6 {
+  padding-top: 20px;
+  font-family: "Merriweather", serif;
+}
+.s-head {
+  width: 198px;
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  margin-right: 493px;
+}
+.s-head h2 {
+  font-family: "Merriweather", serif;
+}
+.s-head hr {
+  margin: 0 auto;
+}
+#featured {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgb(0, 0, 0.3)),
+    url("https://mobirise.com/extensions/educationm4/assets/images/background1.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 388.13px;
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+}
+#featured h2 {
+  font-family: "Merriweather", serif;
+}
+#featured p {
+  font-family: "Merriweather", serif;
+  font-size: 10px;
+  width: 699px;
+  padding: 20px 0px;
+}
+.call {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #656565;
+  background-color: #ffffff;
+  font-size: 10px;
+  border-radius: 5px;
+}
+.feat {
+  margin-left: 200px;
+}
+.t-head {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.t-head h2 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #000000;
+}
+.t-head hr {
+  margin: 0 auto;
+}
+.team-img img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.teams h4 {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  color: #0087ab;
+}
+.teams h5 {
+  font-size: 12px;
+  color: #656565;
+}
+.number {
+  padding: 10px 0px;
+}
+.prfg p {
+  font-size: 12px;
+  color: #656565;
+  padding-top: 10px;
+}
+.bor-bot {
+  border-bottom: 1px solid #0087ab;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.bor-bot:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-bottom: 1px solid #e9e9e9;
+  width: 85%;
+}
+.conta-par{
+  padding-left: 370px;
+    width: 860px;
+}
+
+.conta h3{
+  font-family: "Merriweather", serif;
+ color: #000000;
+ font-size: 15px;
+ font-weight: 500;
+}
+.icon{
+  color: #656565;
+  font-size: 14px;
+}
+.icon span{
+  padding-left: 5px;
+}
+.icon div{
+  padding-bottom: 15px;
+}
+.socail-list{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 0px;
+}
+.socail-list div{
+  margin-left: 10px;
+  font-size: 1.3rem;
+    background: #e9e9e9;
+    border-radius: 100%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(101, 101, 101);
+}
+.conta-par .prgf{
+  font-size: 11px;
+  color: #656565;
+}
+input{
+  font-size: 15px;
+  padding: 5px;
+  position: relative;
+}
+.sub{
+  background-color: #0087ab;
+    padding: 11px ;
+    color: white;
+    font-size: 11px;
+    border: 1px solid;
+    position: absolute;
+    margin-bottom: 1px;
+}
+.sub:hover{
+  border: 1px solid #0087ab !important;
+  cursor: pointer;
+  color: #0087ab !important;
+    background: white !important;
+}
+#end{
+  background-color: #0087ab;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+#end p{
+  margin-top: 14px;
+}
